@@ -31,7 +31,7 @@ DroneCommandCharacteristic.prototype.onWriteRequest = function(data, offset, wit
   // }
   else {
     var command = data.readUInt8(0);
-    command.log("command: " + command);
+    console.log("command: " + command);
     // ここにドローンに関するコマンドを追加
     // if (crust == 1) {
     //   drone.forward(50);
